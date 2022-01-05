@@ -1,0 +1,3 @@
+/main
+/.docker/rust/registry/*
+!/.docker/rust/registry/.gitkeep

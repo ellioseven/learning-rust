@@ -1,0 +1,11 @@
+version: "2"
+services:
+  rust:
+    user: 1000:1000
+    image: "rust:1.55-alpine"
+    working_dir: "/usr/src"
+    environment:
+      USER: "usr"
+    volumes:
+      - ".:/usr/src"
+      - ".docker/rust/registry:/usr/local/cargo/registry"
